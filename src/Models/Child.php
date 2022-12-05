@@ -7,19 +7,22 @@ use minniePerez\Database;
 class Child{
 
     private ?int $id;
-    private string $coder;
-    private string $issue;
+    private string $childName;
+    private ?int $age;
+    private string $place;
+    private string $giftSuggestion;
     private ?string $dateTime;
 
-    
     private $table = "childrenTeeth";
     private $database;
 
     public function __construct($id = null, $childName = "", $age = "", $place = "", $giftSuggestion = "",$dateTime = null){
 
         $this->id = $id;
-        $this->coder = $coder;
-        $this->issue = $issue;
+        $this->childName = $childName;
+        $this->age = $age;
+        $this->place = $place;
+        $this->giftSuggestion = $giftSuggestion;
         $this->dateTime = $dateTime;
 
         if(!$this->database){
@@ -43,11 +46,11 @@ class Child{
     }
 
     public function getChildName(){
-        return $this->coder;
+        return $this->childName;
     }
 
-    public function getIssue(){
-        return $this->issue;
+    public function getAge(){
+        return $this->age;
     }
 
     public function getId(){
@@ -56,5 +59,17 @@ class Child{
 
     public function getDateTime(){
         return $this->dateTime;
+    }
+
+    public function getPlace(){
+        return $this->place;
+    }
+
+    public function getGiftSuggestion(){
+        return $this->giftSuggestion;
+    }
+
+    public function save(){
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`childName`, `age`, `place`, `giftSuggestion`) VALUES ('$this->childName', '$this->age','$this->place','$this->giftSuggestion');");
     }
 }

@@ -15,20 +15,32 @@ class ChildController{
             return;
         }
 
+        if (isset($_GET["action"]) && ( $_GET["action"] == "store"))
+        {
+            $this->store($_POST);
+            return;
+        }
 
         $this->index();
-
     }
 
     public function index()
     {
-        $childName = new ChildName;
-        $coders = $childName->all();
-        new View("coderList",["coder" => $coders]);
+        $child = new Child;
+        $children = $child->all();
+        new View("childrenList",["child" => $children]);
     }   
 
     public function create(){
-        new View ("createCoder");
+        new View ("createChild");
+    }
+
+    public function store(array $request){
+        $newChild = new Child(null, $request["childName"], $request["age"], $request["place"], $request["giftSuggestion"], null);
+        
+        $newChild->save();
+
+        $this->index();
     }
 
 }
