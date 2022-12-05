@@ -14,7 +14,6 @@ class Database {
 
         try{
             $this->mysql = $this->getConnection();
-            //echo "Conexión realizada satisfactoriamente";
         }
         catch(PDOException $e){
             echo "Conexión Fallida : " . $e->getMessage();

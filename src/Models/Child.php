@@ -16,7 +16,7 @@ class Child{
     private $table = "childrenTeeth";
     private $database;
 
-    public function __construct($id = null, $childName = "", $age = "", $place = "", $giftSuggestion = "",$dateTime = null){
+    public function __construct($id = null, $childName = "", $age = null, $place = "", $giftSuggestion = "",$dateTime = null){
 
         $this->id = $id;
         $this->childName = $childName;

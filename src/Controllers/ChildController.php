@@ -3,7 +3,7 @@
 namespace minniePerez\Controllers;
 
 use minniePerez\Core\View;
-use minniePerez\Models\ChildName;
+use minniePerez\Models\Child;
 
 class ChildController{
 
