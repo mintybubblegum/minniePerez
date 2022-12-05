@@ -16,38 +16,40 @@
         <html>
 
     <body>
-<div>
+        <div>
             <a href="?action=create">
-                <button type="button">add task</button>
+                <button class="btn btn-primary">Add task</button>
             </a>
         </div>
         
         <main>
-            <table class="table">
-                <thead>
-                    <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Child Name</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Gift Suggestion</th>
-                    <th scope="col">Date Time</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    foreach ($data["child"] as $child){
-                        echo "
+            <div class="tableHome">
+                <table class="table">
+                    <thead>
                         <tr>
-                            <td>{$child->getId()}</td>
-                            <td>{$child->getChildName()}</td>
-                            <td>{$child->getAge()}</td>
-                            <td>{$child->getGiftSuggestion()}</td>
-                            <td>{$child->getDateTime()}</td>
-                        </tr>            
-                        ";
-                    }?>
-                </tbody>
-</table>
+                            <th scope="col">Id</th>
+                            <th scope="col">Child Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Gift Suggestion</th>
+                            <th scope="col">Date Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach ($data["child"] as $child){
+                            echo "
+                            <tr>
+                                <td>{$child->getId()}</td>
+                                <td>{$child->getChildName()}</td>
+                                <td>{$child->getAge()}</td>
+                                <td>{$child->getGiftSuggestion()}</td>
+                                <td>{$child->getDateTime()}</td>
+                            </tr>            
+                            ";
+                        }?>
+                    </tbody>
+                </table>
+            </div>
         </main>
 
 
