@@ -16,7 +16,7 @@ class Child{
     private $table = "childrenTeeth";
     private $database;
 
-    public function __construct($id = null, $childName = "", $age = null, $place = "", $giftSuggestion = "",$dateTime = null){
+    public function __construct($id = null, $childName = "", $age = null, $place = "", $giftSuggestion = "", $dateTime = null){
 
         $this->id = $id;
         $this->childName = $childName;
@@ -70,6 +70,18 @@ class Child{
     }
 
     public function save(){
-        $this->database->mysql->query("INSERT INTO `{$this->table}` (`childName`, `age`, `place`, `giftSuggestion`) VALUES ('$this->childName', '$this->age','$this->place','$this->giftSuggestion');");
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`childName`, `age`, `place`, `giftSuggestion`) VALUES (`$this->childName`, `$this->age`,`$this->place`,`$this->giftSuggestion');");
+    }
+
+    public function findById($id){
+        $query = $this->database->mysql->query("SELECT * FROM `{$this->table}` WHERE `id` = {$id}"); 
+        $result = $query->fetchAll(); 
+
+        return new Child($result[0]["id"], $result[0]["childName"], $result[0]["age"], $result[0]["place"], $result[0]["giftSuggestion"], $result[0]["dateTime"]);
+    }
+
+    public function destroy(){
+        $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}"); 
+
     }
 }

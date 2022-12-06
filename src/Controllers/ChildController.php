@@ -22,6 +22,14 @@ class ChildController{
         }
 
         $this->index();
+
+        if (isset($_GET["action"]) && ($_GET["action"] == "delete")) 
+        {
+            $this->delete($_GET["id"]); 
+            return;
+        }
+    
+        $this->index();
     }
 
     public function index()
@@ -43,5 +51,12 @@ class ChildController{
         $this->index();
     }
 
+    public function delete($id){
+        $childHelper = new Child();
+        $child = $childHelper->findById($id);
+        $child->destroy();
+
+        $this->index();
+    }
 }
 
