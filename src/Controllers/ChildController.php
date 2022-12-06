@@ -29,6 +29,12 @@ class ChildController{
             return;
         }
     
+        if (isset($_GET["action"]) && ( $_GET["action"] == "update"))
+        {
+            $this->update($_POST,$_GET["id"]);
+            return;
+        }
+
         $this->index();
     }
 
@@ -44,10 +50,8 @@ class ChildController{
     }
 
     public function store(array $request){
-        $newChild = new Child(null, $request["childName"], $request["age"], $request["place"], $request["giftSuggestion"], null);
-        
+        $newChild = new Child(null, $request["childName"], $request["age"], $request["place"], $request["giftSuggestion"], null);     
         $newChild->save();
-
         $this->index();
     }
 
@@ -55,7 +59,20 @@ class ChildController{
         $childHelper = new Child();
         $child = $childHelper->findById($id);
         $child->destroy();
+        $this->index();
+    }
 
+    public function edit($id){
+        $childHelper = new Child();
+        $child = $childHelper->findById($id);
+        new View ("editChild", ["child" => $child]);
+    }
+
+    public function update(array $request, $id){
+        $childHelper = new Child();
+        $child = $childHelper->findById($id);
+        $child->rename($request["childName"], $request["age"], $request["place"], $request["giftSuggestion"]);  
+        $child->update();
         $this->index();
     }
 }

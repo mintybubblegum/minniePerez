@@ -26,7 +26,7 @@ class Child{
         $this->dateTime = $dateTime;
 
         if(!$this->database){
-        $this->database = new Database();
+            $this->database = new Database();
         }
     }
 
@@ -82,6 +82,16 @@ class Child{
 
     public function destroy(){
         $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}"); 
+    }
 
+    public function rename($childNew, $ageNew, $placeNew, $giftSuggestionNew){
+        $this->childName = $childNew;
+        $this->age = $ageNew;
+        $this->place = $placeNew;
+        $this->giftSuggestion = $giftSuggestionNew;
+    }
+
+    public function update(){
+        $this->database->mysql->query("UPDATE `{$this->table}` SET `childName` = '{$this->childName}', `age` = '{$this->age}', `place` = '{$this->place}', `giftSuggestion` = '{$this->giftSuggestion}' WHERE `id` = {$this->id}");
     }
 }

@@ -45,7 +45,8 @@
                                 <td>{$child->getGiftSuggestion()}</td>
                                 <td>{$child->getDateTime()}</td>
                                 <td>
-                                    <a href='?action=delete&id={$child->getId()}'>Borrar</a> 
+                                    <a href='?action=delete&id={$child->getId()}'>Delete</a> 
+                                    <a href='?action=edit&id={$child->getId()}'>Edit</a> 
                                 </td>
                             </tr>            
                             ";
