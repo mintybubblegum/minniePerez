@@ -9,7 +9,9 @@ require_once("Components/header.php");
 <body>
 
     <main>
-    <a href="./index.php"><button class="btn btn-primary">Cancel</button></a>
+        <h1>Add new tooth fallout</h1>
+        <br>
+        <br>
         <form class="row g-3" action="?action=store" method="post">
             <div class="col-md-6">
                 <label class="form-label">Child Name*</label>
@@ -30,6 +32,7 @@ require_once("Components/header.php");
             <div class="buttons">
                 <button type ="submit" value="create" class="btn btn-primary">Save</button>
                 <button type="reset" value="reset" class="btn btn-primary">Reset</button>
+                <a href="./index.php"><button class="btn btn-primary">Cancel</button></a>
             </div>
         </form>
     </main>

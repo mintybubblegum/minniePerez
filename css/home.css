@@ -1,4 +1,7 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
 .tableHome {
-    background-image: url("/public/img/notebookHome.png") !important;
     
 }

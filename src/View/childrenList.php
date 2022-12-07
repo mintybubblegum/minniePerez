@@ -16,9 +16,11 @@
         <html>
 
     <body>
+        <h1>Tooth Archive</h1>
+        <br>
         <div>
             <a href="?action=create">
-                <button class="btn btn-primary">Add task</button>
+                <button class="btn btn-primary">Add</button>
             </a>
         </div>
         
@@ -45,15 +47,14 @@
                                 <td>{$child->getGiftSuggestion()}</td>
                                 <td>{$child->getDateTime()}</td>
                                 <td>
-                                    <a href='?action=delete&id={$child->getId()}'><button>Delete</button></a> 
-                                    <a href='?action=edit&id={$child->getId()}'>Edit</a> 
+                                    <a href='?action=delete&id={$child->getId()}'><button>🗑</button></a> 
+                                    <a href='?action=edit&id={$child->getId()}'>✏</a> 
                                 </td>
                             </tr>            
                             ";
                         }?>
                     </tbody>
                 </table>
-                <img src='/public/img/notebookHome.png' style= 'width:50px'>
             </div>
         </main>
 
