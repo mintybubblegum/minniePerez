@@ -45,7 +45,7 @@
                                 <td>{$child->getGiftSuggestion()}</td>
                                 <td>{$child->getDateTime()}</td>
                                 <td>
-                                    <a href='?action=delete&id={$child->getId()}'>Delete</a> 
+                                    <a href='?action=delete&id={$child->getId()}'><button>Delete</button></a> 
                                     <a href='?action=edit&id={$child->getId()}'>Edit</a> 
                                 </td>
                             </tr>            
@@ -53,6 +53,7 @@
                         }?>
                     </tbody>
                 </table>
+                <img src='/public/img/notebookHome.png' style= 'width:50px'>
             </div>
         </main>
 

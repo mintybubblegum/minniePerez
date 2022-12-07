@@ -21,7 +21,11 @@ class ChildController{
             return;
         }
 
-        $this->index();
+        if (isset($_GET["action"]) && ($_GET["action"] == "edit"))
+        {
+            $this->edit($_GET["id"]);
+            return;
+        }
 
         if (isset($_GET["action"]) && ($_GET["action"] == "delete")) 
         {
@@ -50,7 +54,7 @@ class ChildController{
     }
 
     public function store(array $request){
-        $newChild = new Child(null, $request["childName"], $request["age"], $request["place"], $request["giftSuggestion"], null);     
+        $newChild = new Child(null, $request["childName"], $request["age"], $request["place"], $request["giftSuggestion"]);     
         $newChild->save();
         $this->index();
     }

@@ -16,7 +16,7 @@ class Child{
     private $table = "childrenTeeth";
     private $database;
 
-    public function __construct($id = null, $childName = "", $age = null, $place = "", $giftSuggestion = "", $dateTime = null){
+    public function __construct(int $id = null, string $childName = '', int $age = null, string $place = '', string $giftSuggestion = '', string $dateTime = null){
 
         $this->id = $id;
         $this->childName = $childName;
@@ -70,7 +70,7 @@ class Child{
     }
 
     public function save(){
-        $this->database->mysql->query("INSERT INTO `{$this->table}` (`childName`, `age`, `place`, `giftSuggestion`) VALUES (`$this->childName`, `$this->age`,`$this->place`,`$this->giftSuggestion');");
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`childName`, `age`, `place`, `giftSuggestion`) VALUES ('$this->childName', '$this->age','$this->place','$this->giftSuggestion');");
     }
 
     public function findById($id){
