@@ -1,7 +1,3 @@
-<header>
-    <div>
-        <h1>Minnie Pérez</h1>
-    </div>
+<header class="mainHeader">
+    <div class="siteIdentity"><a><img src="../../../public/img/minniePerezLogo.png"></a></div>
 </header>
-<br>
-<br>

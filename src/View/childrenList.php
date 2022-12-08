@@ -1,70 +1,50 @@
-<html>
-
 <?php
-    require_once("Components/layout.php");
+    require_once("Components/open.html");
+    require_once("Components/header.php");
 ?>
 
-    <body>
+<h1>Tooth Archive</h1>
+<br>
+<div>
+    <a href="?action=create">
+        <button class="btn btn-primary">Add</button>
+    </a>
+</div>
 
-        <?php
-        require_once("Components/header.php");
-        ?>
-
-        <main>
-
-        
-        <html>
-
-    <body>
-        <h1>Tooth Archive</h1>
-        <br>
-        <div>
-            <a href="?action=create">
-                <button class="btn btn-primary">Add</button>
-            </a>
-        </div>
-        
-        <main>
-            <div class="tableHome">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Child Name</th>
-                            <th scope="col">Age</th>
-                            <th scope="col">Gift Suggestion</th>
-                            <th scope="col">Date Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach ($data["child"] as $child){
-                            echo "
-                            <tr>
-                                <td>{$child->getId()}</td>
-                                <td>{$child->getChildName()}</td>
-                                <td>{$child->getAge()}</td>
-                                <td>{$child->getGiftSuggestion()}</td>
-                                <td>{$child->getDateTime()}</td>
-                                <td>
-                                    <a href='?action=delete&id={$child->getId()}'><button>🗑</button></a> 
-                                    <a href='?action=edit&id={$child->getId()}'>✏</a> 
-                                </td>
-                            </tr>            
-                            ";
-                        }?>
-                    </tbody>
-                </table>
-            </div>
-        </main>
-
-
-    </body>
-
-
-
-</html>
-
-        <?php
-        require_once("Components/footer.php");
-        ?>
+<main>
+<div class="tableHome">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Child Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gift Suggestion</th>
+                <th scope="col">Date Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            foreach ($data["child"] as $child){
+                echo "
+                <tr>
+                    <td>{$child->getId()}</td>
+                    <td>{$child->getChildName()}</td>
+                    <td>{$child->getAge()}</td>
+                    <td>{$child->getGiftSuggestion()}</td>
+                    <td>{$child->getDateTime()}</td>
+                    <td>
+                        <a href='?action=delete&id={$child->getId()}'><button>🗑</button></a> 
+                        <a href='?action=edit&id={$child->getId()}'>✏</a> 
+                    </td>
+                </tr>            
+                ";
+            }?>
+        </tbody>
+    </table>
+</div>
+</main>
+<?php
+    require_once("Components/footer.php");
+    require_once("Components/close.html");
+?>
