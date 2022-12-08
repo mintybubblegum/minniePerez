@@ -3,12 +3,12 @@
     require_once("Components/header.php");
 ?>
 
-<h1>Tooth Archive</h1>
-<br>
-<div>
+<div class="addBox">
+    <h1 class="titleHome">Tooth Archive</h1>
     <a href="?action=create">
-        <button class="btn btn-primary">Add</button>
+        <button class="addButton"><img src="./public/img/addButton.png"></button>
     </a>
+    
 </div>
 
 <main>

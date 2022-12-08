@@ -1,6 +1,6 @@
 <?php
 
-require_once("Components/layout.php");
+require_once("Components/open.html");
 
 require_once("Components/header.php");
 

@@ -7,18 +7,40 @@ body {
 }
 
 /* Header */
-
-.mainHeader {
+header {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 50px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.siteIdentity img {
-    width: 270px;
+/* home */
+.titleHome {
+    display: flex;
+    justify-content: center;
 }
+
+.addBox {
+    width: 1440px;
+    height: 117px;
+    display: flex;
+    justify-content:center;
+    border:2px solid red;
+    ;   
+} 
+
+.addButton {
+    width: 117px;
+    height: 117px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-around;
+}
+
+.tableHome {
+    background-image: url("./public/img/notebookHome.png");
+    z-index: 1;
+}
+
+
 
 /* Footer */
 
