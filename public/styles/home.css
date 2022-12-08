@@ -10,29 +10,28 @@ body {
 header {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
-/* home */
-.titleHome {
-    display: flex;
-    justify-content: center;
-}
+/* Home */
 
 .addBox {
-    width: 1440px;
+    width: 999px;
     height: 117px;
+    margin: 10px;
+    margin-left: 400px;
     display: flex;
-    justify-content:center;
-    border:2px solid red;
-    ;   
+    justify-content: space-around;
 } 
+
+.titleHome {
+    align-self: center;
+    font-size: 38px;
+}
 
 .addButton {
     width: 117px;
     height: 117px;
-    display: flex;
-    align-self: flex-end;
-    justify-content: space-around;
 }
 
 .tableHome {
