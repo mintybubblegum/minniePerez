@@ -10,7 +10,11 @@ body {
 header {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     padding-top: 10px;
+=======
+    margin-top: 10px;
+>>>>>>> 75ec107942928fe9d60a4f27a6102b098134d10d
 }
 
 /* Home */
@@ -22,7 +26,10 @@ header {
     margin-left: 400px;
     display: flex;
     justify-content: space-around;
+<<<<<<< HEAD
     /* border:2px solid red; */  
+=======
+>>>>>>> 75ec107942928fe9d60a4f27a6102b098134d10d
 } 
 
 .titleHome {
