@@ -10,41 +10,64 @@ body {
 header {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 
-/* home */
-.titleHome {
-    display: flex;
-    justify-content: center;
-}
+/* Home */
 
 .addBox {
-    width: 1440px;
+    width: 999px;
     height: 117px;
+    margin: 10px;
+    margin-left: 400px;
     display: flex;
-    justify-content:center;
-    border:2px solid red;
-    ;   
+    justify-content: space-around;
+    /* border:2px solid red; */  
 } 
+
+.titleHome {
+    align-self: center;
+    font-size: 38px;
+}
 
 .addButton {
     width: 117px;
     height: 117px;
-    display: flex;
-    align-self: flex-end;
-    justify-content: space-around;
 }
 
 .tableHome {
-    background-image: url("./public/img/notebookHome.png");
-    z-index: 1;
+    width: 1245px;
+    height: 475px;
+    border: 2px solid red;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
 }
 
+.table {
+    width: 1245px;
+    height: 475px;
+    border: 2px solid rgb(17, 0, 255);
+    /* display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around; */
+}
 
 
 /* Footer */
 
-.mainFooter {
+.footerInfo {
+    width: 1333px;
+    height: 83px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-top: 10px;
+    margin-left: 70px;
+    border: 2px solid green;
+}
+
+/* .mainFooter {
     display: flex;
     align-items: center;
     padding: 35px 100px;    
@@ -65,4 +88,4 @@ header {
 
 .footer-social-media img {
     width: 25px;
-}
+} */

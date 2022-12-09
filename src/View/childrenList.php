@@ -13,17 +13,18 @@
 
 <main>
 <div class="tableHome">
-    <table class="table">
-        <thead>
+<table class="table" style= "background-image: url(./public/img/notebookHome.png)">
+        <thead class="boxTitle">
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Child Name</th>
                 <th scope="col">Age</th>
+                <th scope="col">Place</th>
                 <th scope="col">Gift Suggestion</th>
                 <th scope="col">Date Time</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="boxContent">
             <?php
             foreach ($data["child"] as $child){
                 echo "
@@ -31,6 +32,7 @@
                     <td>{$child->getId()}</td>
                     <td>{$child->getChildName()}</td>
                     <td>{$child->getAge()}</td>
+                    <td>{$child->getPlace()}</td>
                     <td>{$child->getGiftSuggestion()}</td>
                     <td>{$child->getDateTime()}</td>
                     <td>
