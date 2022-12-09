@@ -1,0 +1,52 @@
+/* Create */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.cardTitle {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.cardBox {
+    width: 760px;
+    height: 475px;
+    padding: 50px 0 0 0;
+}
+
+.cardImg {
+    width: 868px;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px 0 200px;
+}
+
+.saveButton{
+    width: 117px;
+    height: 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.resetButton {
+    width: 117px;
+    height: 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.cancelButton {
+    width: 117px;
+    height: 117px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}

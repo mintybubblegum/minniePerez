@@ -16,7 +16,6 @@
     <table class="table" style= "background-image: url(./public/img/notebookHome.png)">
         <thead>
             <tr class="boxTitle">
-                <th scope="col">Id</th>
                 <th scope="col">Child Name</th>
                 <th scope="col">Age</th>
                 <th scope="col">Place</th>
@@ -29,7 +28,6 @@
             foreach ($data["child"] as $child){
                 echo "
                 <tr>
-                    <td>{$child->getId()}</td>
                     <td>{$child->getChildName()}</td>
                     <td>{$child->getAge()}</td>
                     <td>{$child->getPlace()}</td>
