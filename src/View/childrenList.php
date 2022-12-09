@@ -13,9 +13,9 @@
 
 <main>
 <div class="tableHome">
-<table class="table" style= "background-image: url(./public/img/notebookHome.png)">
-        <thead class="boxTitle">
-            <tr>
+    <table class="table" style= "background-image: url(./public/img/notebookHome.png)">
+        <thead>
+            <tr class="boxTitle">
                 <th scope="col">Id</th>
                 <th scope="col">Child Name</th>
                 <th scope="col">Age</th>

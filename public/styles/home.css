@@ -15,6 +15,11 @@ header {
 
 /* Home */
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .addBox {
     width: 999px;
     height: 117px;
@@ -37,43 +42,27 @@ header {
 .tableHome {
     width: 1245px;
     height: 475px;
-    border: 2px solid red;
-    display: flex;
-    /* justify-content: space-around; */
-    justify-content: center;
 }
 
 .table {
     width: 1245px;
     height: 475px;
-    border: 2px solid rgb(17, 0, 255);
-    /* display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around; */
 }
 
+.boxTitle {
+    padding: 20px;
+}
 
 /* Footer */
 
-.footerInfo {
-    width: 1333px;
-    height: 83px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    margin-top: 10px;
-    margin-left: 70px;
-    border: 2px solid green;
-}
-
-/* .mainFooter {
+.mainFooter {
     display: flex;
     align-items: center;
-    padding: 35px 100px;    
+    padding: 35px 100px;
     justify-content: space-between;
 }
 
-.footerInfo{
+.footerInfo {
     display: inline;
     font-family: "Inter";
     font-size: 18px;
@@ -81,10 +70,15 @@ header {
     color: black;
 }
 
+.footerSocialMedia {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .footerSocialMedia a {
     padding: 0 20px;
 }
 
-.footer-social-media img {
+.footerSocialMedia img {
     width: 25px;
-} */
+}
