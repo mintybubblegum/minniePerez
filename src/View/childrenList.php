@@ -12,7 +12,7 @@
 </div>
 
 <main>
-<div class="tableHome">
+<div class="tableHome container text-center">
     <table class="table table-borderless" style= "background-image: url(./public/img/notebookHome.png)">
         <thead>
             <tr class="boxTitle">

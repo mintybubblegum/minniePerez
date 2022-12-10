@@ -49,6 +49,12 @@ main {
     height: 475px;
 }
 
+/* .tableHome::-webkit-scrollbar{
+    width: 12px;
+    background: #efefef ;
+} */
+
+
 .boxTitle {
     padding: 20px;
 }
