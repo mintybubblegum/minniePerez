@@ -13,7 +13,7 @@
 
 <main>
 <div class="tableHome">
-    <table class="table" style= "background-image: url(./public/img/notebookHome.png)">
+    <table class="table table-borderless" style= "background-image: url(./public/img/notebookHome.png)">
         <thead>
             <tr class="boxTitle">
                 <th scope="col">Child Name</th>
