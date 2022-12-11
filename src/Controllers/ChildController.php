@@ -54,7 +54,7 @@ class ChildController{
     }
 
     public function store(array $request){
-        $newChild = new Child(null, $request["childName"], $request["age"], $request["place"], $request["giftSuggestion"]);     
+        $newChild = new Child(null, $request["childName"], (int)$request["age"], $request["place"], $request["giftSuggestion"]);     
         $newChild->save();
         $this->index();
     }

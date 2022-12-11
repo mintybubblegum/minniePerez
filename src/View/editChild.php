@@ -8,28 +8,28 @@
 </div>
 
     <main>
-        <div class="cardImg" style= "background-image: url(./public/img/yellowNotebook.png)">
+        <div class="cardImg" style="background-image: url(./public/img/yellowNotebook.png)">
             <form class="row g-3 cardBox" action="?action=store" method="post">
                 <div class="col-md-6">
                     <label class="form-label">Child Name*</label>
-                    <input type="text" class="form-control" name="childName">
+                    <input type="text" class="form-control" name="childName" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Age</label>
-                    <input type="number" class="form-control" name="age">
+                    <label for="inputPassword4" class="form-label">Age*</label>
+                    <input min="0" type="number" class="form-control" name="age" required>
                 </div>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Place*</label>
-                    <input type="text" class="form-control" name="place" placeholder="in the school playground">
+                    <input type="text" class="form-control" name="place" placeholder="in the school playground" required>
                 </div>
                 <div class="col-12">
                     <label class="form-label">Gift Suggestion</label>
                     <input type="text" class="form-control" name="giftSuggestion">
                 </div>
                 <div class="buttons">
-                    <button type ="submit" value="create" class="saveButton" style= "background-image: url(./public/img/saveButton.png)"></button>
-                    <button type="reset" value="reset" class="resetButton" style= "background-image: url(./public/img/resetButton.png)"></button>
-                    <a href="./index.php"><button class="cancelButton" style= "background-image: url(./public/img/cancelButton.png)"></button></a>
+                    <button value="create" class="saveButton" style="background-image: url(./public/img/saveButton.png)"></button>
+                    <button type="reset" value="reset" class="resetButton" style="background-image: url(./public/img/resetButton.png)"></button>
+                    <a href="./index.php"><button class="cancelButton" style="background-image: url(./public/img/cancelButton.png)"></button></a>
                 </div>
             </form>
         </div>
@@ -39,4 +39,4 @@
     require_once("Components/footer.php");
 ?>
 
-    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>

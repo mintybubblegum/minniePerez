@@ -16,7 +16,7 @@ class Child{
     private $table = "childrenTeeth";
     private $database;
 
-    public function __construct(int $id = null, string $childName = '', int $age = null, string $place = '', string $giftSuggestion = '', string $dateTime = null){
+    public function __construct(?int $id = null, string $childName = '', ?int $age = null, string $place = '', string $giftSuggestion = '', ?string $dateTime = null){
 
         $this->id = $id;
         $this->childName = $childName;
@@ -38,7 +38,6 @@ class Child{
 
         foreach ($childrenArray as $child){
             $childItem = new Child($child["id"], $child["childName"], $child["age"], $child["place"], $child["giftSuggestion"], $child["dateTime"]);
-
             array_push($childrenList, $childItem);
         }
 
