@@ -33,9 +33,9 @@
                     <td>{$child->getPlace()}</td>
                     <td>{$child->getGiftSuggestion()}</td>
                     <td>{$child->getDateTime()}</td>
-                    <td>
-                        <a href='?action=delete&id={$child->getId()}'><button>🗑</button></a> 
-                        <a href='?action=edit&id={$child->getId()}'>✏</a> 
+                    <td class='d-flex'>
+                        <a href='?action=delete&id={$child->getId()}' class='mr-3'><img src='./public/img/bin.png'></a> 
+                        <a href='?action=edit&id={$child->getId()}'><img src=\"./public/img/pencil.png\"></a> 
                     </td>
                 </tr>            
                 ";
