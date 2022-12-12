@@ -12,23 +12,21 @@ Fantastic character who collects children's teeth during sleep.
 Develop a Web "CRUD" application in PHP that allows developers and teams to make appointments to solve technical problems with the help of the trainer or CTO.
 
  ## Members 🦷 
+  
+- [Paloma Ruiz Ramírez](https://github.com/birdsinyourgarden) - SCRUM Master
 
-* Ana Rueda Guiu - Product Owner
-  https://github.com/anaruedaguiu
- 
-* Paloma Ruiz Ramírez - SCRUM Master
-  https://github.com/birdsinyourgarden
+- [Ana Rueda Guiu](https://github.com/anaruedaguiu) - Product Owner
 
-* Carmen Gallardo Pozo - Developer
-  https://github.com/CarmenGP
+- [Carmen Gallardo Pozo](https://github.com/CarmenGP) - Developer
 
-* Camila Ruiz Gutiérrez - Developer
-  https://github.com/camilaruiz17
+- [Camila Ruiz Gutiérrez](https://github.com/camilaruiz17) - Developer
 
-* Noa Trujillo Zamora - Developer
-  https://github.com/mintybubblegum
+- [Noa Trujillo Zamora](https://github.com/mintybubblegum) - Developer
   
 ## Screenshots 🐭
+
+<img src="/public/img/figma-desktop-gameover.PNG" width="35%">
+
 final result -- video??
 sketch
 Figma + atomic
