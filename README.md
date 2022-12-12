@@ -29,20 +29,51 @@ Develop a Web "CRUD" application in PHP that allows developers and teams to make
   https://github.com/mintybubblegum
   
 ## Screenshots 🐭
+final result -- video??
+sketch
+Figma + atomic
   
 ## Stacks 🔧
-  
-In this project we have used HTML 5, CSS 3 and PHP.
+
+*Project sketch and final design: Figma.
+*Frontend: HTML5, CSS3.
+*Backend: PHP.
+*Database design: myDrawSql.
+*Database: MySQL.
+
+## Required
+
+* PHP 7.4 min
+* Composer installed
+* mySql
+
+## To install project
+
+* Clone git https://github.com/birdsinyourgarden/minniePerez.git
+* Composer install
+* Create database in PhpMyAdmin with database name : minnieperezbbdd.
+* Import the following database table: minniePerez/public/importSql/childrenteeth.sql
 
 ## Tests 🪄
 
 * vendor/bin/phpunit
-* (1 test, 2 assertions)
+* (5 tests, 5 assertions)
 
 ## Methodology 📚
 
 * Agile and SCRUM
-* Mob and Pair programming
+* Mob programming
+
+## Core skills:
+*MVC Design pattern.
+*Git version control system.
+*User stories and tasks implementation (Trello).
+*Communication and self-evaluation.
 
 ## Next steps 🐁
 
+*Diseño responsive
+* Add pop-up window to confirm when deleting child entry in database.
+* Add vertical scrollbar in homepage form. 
+* Change language to English in required fields.
+* Modify 'Cancel' button of create and edit views to be able to work as we designed it in the first place.
