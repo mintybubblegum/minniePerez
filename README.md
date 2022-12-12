@@ -33,11 +33,11 @@ Figma + atomic
   
 ## Stacks 🔧
 
-*Project sketch and final design: Figma.
-*Frontend: HTML5, CSS3.
-*Backend: PHP.
-*Database design: myDrawSql.
-*Database: MySQL.
+* Project sketch and final design: Figma.
+* Frontend: HTML5, CSS3.
+* Backend: PHP.
+* Database design: myDrawSql.
+* Database: MySQL.
 
 ## Required
 
@@ -63,14 +63,14 @@ Figma + atomic
 * Mob programming
 
 ## Core skills:
-*MVC Design pattern.
-*Git version control system.
-*User stories and tasks implementation (Trello).
-*Communication and self-evaluation.
+* MVC Design pattern.
+* Git version control system.
+* User stories and tasks implementation (Trello).
+* Communication and self-evaluation.
 
 ## Next steps 🐁
 
-*Diseño responsive
+* Diseño responsive
 * Add pop-up window to confirm when deleting child entry in database.
 * Add vertical scrollbar in homepage form. 
 * Change language to English in required fields.
