@@ -25,7 +25,7 @@ Develop a Web "CRUD" application in PHP that allows developers and teams to make
   
 ## Screenshots 🐭
 
-<img src="/public/img/Screenshot 2022-12-12 at 15-12-23 Minnie Pérez" width="35%">
+<img src="./public/img/Screenshot 2022-12-12 at 15-12-23 Minnie Pérez" width="35%">
 
 final result -- video??
 sketch
