@@ -25,12 +25,13 @@ Develop a Web "CRUD" application in PHP that allows developers and teams to make
   
 ## Screenshots 🐭
 
-<img src="./public/img/Screenshot 2022-12-12 at 15-12-23 Minnie Pérez" width="35%">
+![ScreenshotVistaUno](https://user-images.githubusercontent.com/108950985/207260246-68cd6ad5-d8ed-47ef-a52e-692433e2ffc8.png)
 
-final result -- video??
-sketch
-Figma + atomic
-  
+![ScreenshotVistaDos](https://user-images.githubusercontent.com/108950985/207260323-b4994980-305d-4038-9f79-cad18934ab7b.png)
+
+![ScreenshotVistaTres](https://user-images.githubusercontent.com/108950985/207260365-d12770ee-eccd-4ce7-9a35-000d3250f7d0.png)
+
+
 ## Stacks 🔧
 
 * Project sketch and final design: Figma.
