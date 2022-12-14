@@ -1,6 +1,5 @@
 
-![headerLogoGrey](https://user-images.githubusercontent.com/116546624/206896276-0478d04b-396a-49a2-9710-bb8e53e07198.png)
-<img src="Assets/icon.png" width="200">
+<div style="text-align:center"><img src="/public/img/headerLogoGrey.png" width="600"/></div>
 
 ## Project name
 Minnie Pérez ![minniePerezLogoEmoticono](https://user-images.githubusercontent.com/116546624/206896606-4f2a818e-faee-4569-b87e-4fc2bbabf884.png)
@@ -25,11 +24,9 @@ Develop a Web "CRUD" application in PHP that allows developers and teams to make
 
   
 ## Screenshots 🐭
-![ScreenshotVistaUno](https://user-images.githubusercontent.com/108950985/207260246-68cd6ad5-d8ed-47ef-a52e-692433e2ffc8.png)
 
-![ScreenshotVistaDos](https://user-images.githubusercontent.com/108950985/207260323-b4994980-305d-4038-9f79-cad18934ab7b.png)
-
-![ScreenshotVistaTres](https://user-images.githubusercontent.com/108950985/207260365-d12770ee-eccd-4ce7-9a35-000d3250f7d0.png)
+<div style=margin-right: "30px">
+<img src="/public/img/figmaMinnieHome03.png" width="30%"></div><img src="/public/img/figmaMinnieCreate03.png" width="30%"><img src="/public/img/figmaMinnieEdit03.png" width="30%">
 
 
 ## Stacks 🔧
