@@ -25,8 +25,9 @@ Develop a Web "CRUD" application in PHP that allows developers and teams to make
   
 ## Screenshots 🐭
 
-<div style=margin-right: "30px">
-<img src="/public/img/figmaMinnieHome03.png" width="30%"></div><img src="/public/img/figmaMinnieCreate03.png" width="30%"><img src="/public/img/figmaMinnieEdit03.png" width="30%">
+<div align="center" style=margin-right: "30px">
+<img src="/public/img/figmaMinnieHome03.png" width="30%"><img src="/public/img/figmaMinnieCreate03.png" width="30%"><img src="/public/img/figmaMinnieEdit03.png" width="30%">
+<br>Figma Mockup</div>
 
 
 ## Stacks 🔧
