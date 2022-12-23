@@ -1,8 +1,5 @@
 
-<div style="text-align:center"><img src="/public/img/headerLogoGrey.png" width="600"/></div>
-
-## Project name
-Minnie Pérez ![minniePerezLogoEmoticono](https://user-images.githubusercontent.com/116546624/206896606-4f2a818e-faee-4569-b87e-4fc2bbabf884.png)
+<div align="center"><img src="/public/img/headerLogoGrey.png" width="600"/></div>
 
 
 ## Description 📝
